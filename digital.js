@@ -1,14 +1,12 @@
 $(document).ready(function() {
-  function displayTime();
+  displayTime();
 });
 
-var displayTime = function() {
+ function displayTime() {
   var currenTime = new Date();
   var hours = currenTime.getHours();
   var minutes = currenTime.getMinutes();
   var seconds = currenTime.getSeconds();
-  var miliseconds = currenTime.getMiliseconds();
+  var clock = document.getElementById('clock');
+  clock.innerText = hours + ":" + minutes + ":" + seconds;
 }
-
-var clock = document.getElementById('clock');
-clock.innerText = hours + ":" + minutes + ":" + seconds + ":" + miliseconds;
