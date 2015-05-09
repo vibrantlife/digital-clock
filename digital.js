@@ -8,5 +8,17 @@ $(document).ready(function() {
   var minutes = currenTime.getMinutes();
   var seconds = currenTime.getSeconds();
   var clock = document.getElementById('clock');
-  clock.innerText = hours + ":" + minutes + ":" + seconds;
+  var meridiem = "AM";
+  if (hours > 12) {
+    hours = hours - 12;
+    meridiem = "PM";
+  }
+  if (hours === 0) {
+    hours = 12;
+  }
+   if (seconds < 10) {
+    seconds = "0" + seconds;
+   }
+  clock.innerText = hours + ":" + minutes + ":" + seconds + " " + meridiem;
+  setInterval(displayTime, 1000);
 }
