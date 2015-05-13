@@ -1,14 +1,14 @@
 body {
 }
 
-#clock {
-  height: 100px;
-  width: 800px;
+#USclock {
+  height: 300px;
+  width: 100%;
   margin: auto;
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
   font-family: 'Indie Flower', cursive;
   color: #f1c40f;
+  text-align: center;
   font-size: 200px;
   background-color: #80d4ea;
 }
