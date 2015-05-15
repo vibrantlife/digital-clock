@@ -1,0 +1,7 @@
+<h1>New Clock</h1>
+
+<%= form_for :title, url: clock1s_path do |event| %>
+  <%= event.label :title %>
+  <%= event.text_field :title %>
+  <%= event.submit "Create" %>
+<% end %>
